@@ -1,6 +1,6 @@
 import './nav-bar.scss';
 
-const NavBar = () => {
+function NavBar() {
   const navlinks = [
     {
       name: 'Home',
@@ -21,17 +21,17 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="navbar">
-      <h3 className="logo">Edward Park</h3>
-        <ul>
-          {navlinks.map((link) => (
-            <li key={link.name}>
-              <a href={link.link}>{link.name}</a>
-            </li>
-          ))}
-        </ul>
+    <nav className='navbar'>
+      <h3 className='logo'>Edward Park</h3>
+      <ul>
+        {navlinks.map((link) => (
+          <li key={link.name}>
+            <a href={link.link}>{link.name}</a>
+          </li>
+        ))}
+      </ul>
     </nav>
   );
-};
+}
 
 export default NavBar;
