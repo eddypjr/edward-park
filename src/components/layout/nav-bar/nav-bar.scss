@@ -1,0 +1,33 @@
+.navbar {
+  align-items: center;
+  background-color: #2196f3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  display: flex;
+  font-size: 1.7rem;
+  height: auto;
+  justify-content: space-between;
+  left: 0;
+  padding: 25px 40px 25px 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+
+  .logo {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+
+    a {
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.23s;
+    }
+  }
+}
