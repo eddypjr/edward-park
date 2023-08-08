@@ -1,0 +1,125 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+
+  .container {
+    margin: 0 auto;
+    max-width: 107rem;
+    padding: 0 4rem;
+
+    @media (min-width: 1600px) {
+      .content {
+        margin-top: 6rem;
+      }
+    }
+
+    .content {
+      align-items: center;
+      display: flex;
+      gap: 10rem;
+      height: 65rem;
+      justify-content: center;
+      position: relative;
+
+      .banner-top {
+        align-items: center;
+        display: flex;
+        gap: 10rem;
+        justify-content: center;
+        position: relative;
+
+        .banner-text {
+          display: flex;
+          flex-direction: column;
+          max-width: 50rem;
+          position: relative;
+
+          h1 {
+            color: #2d2e32;
+            font-size: 5.5rem;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+          }
+
+          p {
+            color: #555;
+            font-family: sans-serif;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 1.6;
+          }
+
+          span {
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            gap: 1.3rem;
+            margin: 2.5rem 0;
+
+            a {
+              color: #2d2e32;
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+      .banner-right {
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        background-image: url('../../assets/linkedinCrop.jpeg');
+        height: 35rem;
+        position: relative;
+        border: 3px solid #2d2e32;
+        width: 35rem;
+      }
+
+      .banner-bottom {
+        align-items: center;
+        bottom: 0;
+        color: #767676;
+        display: flex;
+        font-size: 1.7rem;
+        left: 0;
+        position: absolute;
+
+        p {
+          border-right: 2px solid rgba(45, 46, 50, 0.5);
+          color: #2d2e32;
+          font-family: Mulish, sans-serif;
+          font-weight: 600;
+          margin-right: 7rem;
+          padding-right: 2rem;
+        }
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 2.5rem;
+          list-style: none;
+
+          li {
+            align-items: center;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+            cursor: pointer;
+            display: flex;
+            height: 6.5rem;
+            justify-content: center;
+            width: 6.5rem;
+
+            img {
+              height: 3.4rem;
+              width: 3.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
