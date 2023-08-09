@@ -21,6 +21,17 @@
       .footer-right {
         display: flex;
         gap: 2rem;
+
+        a {
+          color: white;
+
+          img {
+            -webkit-filter: invert(100%); /* Safari/Chrome */
+            filter: invert(100%);
+            width: 2em;
+            height: 2em;
+          }
+        }
       }
     }
   }

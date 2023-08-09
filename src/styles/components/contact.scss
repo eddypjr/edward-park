@@ -1,18 +1,22 @@
 @import '../../styles/global/colors.scss';
 
 .contact {
-  padding: 11rem 0;
+  padding: 9rem 0;
 
   .container {
     margin: 0 auto;
     max-width: 107rem;
     padding: 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
     .content {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      align-items: center;
 
-      .contact-header {
+      div {
         h3 {
           color: $header-color;
           font-size: 1.7rem;
@@ -25,7 +29,40 @@
           color: $title-color;
           font-size: 2.5rem;
         }
+
+        p {
+          color: $text-color;
+          font-family: sans-serif;
+          font-size: 1.7rem;
+          font-weight: 500;
+          line-height: 1.5;
+        }
       }
+
+      h4 {
+        color: $title-color;
+        font-family: sans-serif;
+        font-size: 2.5rem;
+        line-height: 1.4;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        color: $text-color;
+        font-family: sans-serif;
+        font-size: 1.7rem;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+    }
+
+    .image-container {
+      background-image: url('../../assets/images/mail.png');
+      background-size: cover;
+      margin-left: 5%;
+      height: 35rem;
+      width: 50rem;
     }
   }
 }
+// }

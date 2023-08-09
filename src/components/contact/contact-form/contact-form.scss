@@ -1,0 +1,82 @@
+// @import '../../styles/global/colors.scss';
+@import '../../../styles/global/colors.scss';
+
+.contact-form {
+  width: 100%;
+  margin-top: 20px;
+
+  div {
+    width: 100%;
+    margin-bottom: 15px;
+
+    label {
+      font-size: 12px;
+      color: gray;
+      margin-bottom: 5px;
+
+      input,
+      textarea {
+        width: 100%;
+        max-width: 100%;
+        border: 1px solid $title-color;
+        border-radius: 5px;
+        margin-top: 5px;
+        padding: 12px;
+        font-size: 14px;
+        resize: vertical;
+
+        &.error {
+          border: 1px solid red;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    input {
+      padding-right: 150px;
+    }
+
+    .error {
+      position: absolute;
+      font-size: 12px;
+      height: 12px;
+      color: red;
+      top: 0;
+      right: 10px;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  button {
+    display: block;
+    background-color: $grey-bg-color;
+    color: $title-color;
+    border-radius: 5px;
+    padding: 12px 20px;
+    width: 100%;
+    box-shadow:
+      0 3px 6px rgba(0, 0, 0, 0.16),
+      0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    font-size: 16px;
+    border: 0;
+    width: 200px;
+    margin-left: auto;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.25),
+        0 8px 8px rgba(0, 0, 0, 0.22);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+
