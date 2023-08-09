@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import '../../styles/components/project-card.scss';
 
 type ProjectCardProps = {
@@ -25,6 +25,7 @@ export default function ProjectCard({ title, image, description, technologies, c
         <p>{description}</p>
         <div className='stack'>
           {technologies.map((technology) => (
+            // LOGOS
             <p key={crypto.randomUUID()}>{technology}</p>
           ))}
         </div>
@@ -35,7 +36,7 @@ export default function ProjectCard({ title, image, description, technologies, c
           </a>
           <a target='_blank' href={demo} rel='noreferrer'>
             Demo
-            <FontAwesomeIcon icon={faLink} size='sm' />
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='sm' />
           </a>
         </div>
       </div>
