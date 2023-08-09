@@ -1,0 +1,27 @@
+.footer {
+  background-color: #2d2e32;
+  padding: 5rem 0;
+  width: 100%;
+
+  .container {
+    margin: 0 auto;
+    max-width: 107rem;
+    padding: 0 4rem;
+
+    .footer-left {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+      h3 {
+        color: #fff;
+        font-size: 1.7rem;
+      }
+
+      .footer-right {
+        display: flex;
+        gap: 2rem;
+      }
+    }
+  }
+}
