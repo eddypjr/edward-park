@@ -1,4 +1,4 @@
-import './nav-bar.scss';
+import '../../../styles/components/nav-bar.css';
 
 function NavBar() {
   const navlinks = [

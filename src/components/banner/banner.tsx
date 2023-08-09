@@ -7,7 +7,7 @@ import reactIcon from '../../assets/react-40.svg';
 import scssIcon from '../../assets/scss.svg';
 import styledComponentsIcon from '../../assets/styled-components.png';
 
-import './banner.scss';
+import '../../styles/components/banner.css';
 
 function Banner() {
   const skillIcons = [
