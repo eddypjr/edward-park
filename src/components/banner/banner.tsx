@@ -6,8 +6,10 @@ import javascriptIcon from '../../assets/javascript.svg';
 import reactIcon from '../../assets/react-40.svg';
 import scssIcon from '../../assets/scss.svg';
 import styledComponentsIcon from '../../assets/styled-components.png';
+import nodeJsIcon from '../../assets/nodejs.svg';
+import resumeIcon from '../../assets/resume.png';
 
-import '../../styles/components/banner.css';
+import '../../styles/components/banner.scss';
 
 function Banner() {
   const skillIcons = [
@@ -35,10 +37,14 @@ function Banner() {
       item: styledComponentsIcon,
       title: 'Styled Components',
     },
+    {
+      item: nodeJsIcon,
+      title: 'Node.js',
+    },
   ];
 
   return (
-    <section className='banner'>
+    <section className='banner' id='home'>
       <div className='container'>
         <div className='content'>
           <div className='banner-top'>
@@ -46,12 +52,21 @@ function Banner() {
               <h1>Front-End React Developer</h1>
               <p>Hi, I&apos;m Edward Park. A passionate Front-end React Developer based in Los Angeles, California.</p>
               <span>
-                <a aria-label='linkedIn' href='https://www.linkedin.com/in/edwardparkwork/'>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  aria-label='linkedIn'
+                  href='https://www.linkedin.com/in/edwardparkwork/'
+                >
                   <FontAwesomeIcon icon={faLinkedin} size='sm' />
                 </a>
 
-                <a aria-label='github' href='https://github.com/eddypjr'>
+                <a target='_blank' rel='noreferrer' aria-label='github' href='https://github.com/eddypjr'>
                   <FontAwesomeIcon icon={faGithub} size='sm' />
+                </a>
+
+                <a target='_blank' rel='noreferrer' aria-label='resume' href='https://eddypjr.github.io/resume/'>
+                  <img src={resumeIcon} alt='resume-icon' />
                 </a>
               </span>
             </div>

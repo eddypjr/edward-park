@@ -2,7 +2,7 @@ import '../../styles/components/about-me.css';
 
 function AboutMe() {
   return (
-    <section className='about'>
+    <section className='about' id='about'>
       <div className='container'>
         <div className='content'>
           <div className='about-me-image'>

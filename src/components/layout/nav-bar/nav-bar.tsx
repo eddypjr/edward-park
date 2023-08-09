@@ -1,4 +1,5 @@
-import '../../../styles/components/nav-bar.css';
+import '../../../styles/components/nav-bar.scss';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function NavBar() {
   const navlinks = [
@@ -24,9 +25,9 @@ function NavBar() {
     <nav className='navbar'>
       <h3 className='logo'>Edward Park</h3>
       <ul>
-        {navlinks.map((link) => (
-          <li key={link.name}>
-            <a href={link.link}>{link.name}</a>
+        {navlinks.map((navItem) => (
+          <li key={navItem.name}>
+            <Link to={navItem.link}>{navItem.name}</Link>
           </li>
         ))}
       </ul>

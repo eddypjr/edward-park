@@ -1,0 +1,31 @@
+@import '../../styles/global/colors.scss';
+
+.contact {
+  padding: 11rem 0;
+
+  .container {
+    margin: 0 auto;
+    max-width: 107rem;
+    padding: 0 4rem;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+
+      .contact-header {
+        h3 {
+          color: $header-color;
+          font-size: 1.7rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
+          text-transform: uppercase;
+        }
+
+        h4 {
+          color: $title-color;
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
