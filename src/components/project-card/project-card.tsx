@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
-import '../../styles/components/project-card.scss';
+import './project-card.scss';
 
 type ProjectCardProps = {
   title: string;
@@ -30,11 +30,11 @@ export default function ProjectCard({ title, image, description, technologies, c
           ))}
         </div>
         <div className='links'>
-          <a target='_blank' href={code} rel='noreferrer'>
+          <a target='_blank' title='Code Repo' href={code} rel='noreferrer'>
             Code
             <FontAwesomeIcon icon={faGithub} size='sm' />
           </a>
-          <a target='_blank' href={demo} rel='noreferrer'>
+          <a target='_blank' title='Live Demo' href={demo} rel='noreferrer'>
             Demo
             <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='sm' />
           </a>

@@ -9,7 +9,7 @@ import styledComponentsIcon from '../../assets/styled-components.png';
 import nodeJsIcon from '../../assets/nodejs.svg';
 import resumeIcon from '../../assets/resume.png';
 
-import '../../styles/components/banner.scss';
+import './banner.scss';
 
 function Banner() {
   const skillIcons = [
@@ -70,7 +70,7 @@ function Banner() {
                 </a>
               </span>
             </div>
-            <div className='banner-right' />
+            <div className='banner-right' aria-label='Personal photo' />
           </div>
 
           <div className='banner-bottom'>

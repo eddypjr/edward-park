@@ -1,5 +1,5 @@
-import '../../../styles/components/nav-bar.scss';
 import { HashLink as Link } from 'react-router-hash-link';
+import './nav-bar.scss';
 
 function NavBar() {
   const navlinks = [
@@ -21,13 +21,21 @@ function NavBar() {
     },
   ];
 
+  const pageUp = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <nav className='navbar'>
-      <h3 className='logo'>Edward Park</h3>
+      <h3 className='logo' onClick={pageUp} role='presentation' aria-label='To the top'>
+        Edward Park
+      </h3>
       <ul>
         {navlinks.map((navItem) => (
           <li key={navItem.name}>
-            <Link to={navItem.link}>{navItem.name}</Link>
+            <Link to={navItem.link} aria-label={navItem.name}>
+              {navItem.name}
+            </Link>
           </li>
         ))}
       </ul>

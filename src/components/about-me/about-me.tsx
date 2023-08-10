@@ -1,4 +1,5 @@
-import '../../styles/components/about-me.css';
+import laptopImage from '../../assets/images/laptop.png';
+import './about-me.scss';
 
 function AboutMe() {
   return (
@@ -6,7 +7,7 @@ function AboutMe() {
       <div className='container'>
         <div className='content'>
           <div className='about-me-image'>
-            <img src='' alt='dropdown' />
+            <img src={laptopImage} alt='laptop' />
           </div>
           <div className='about-me-text'>
             <h3>About Me</h3>

@@ -1,6 +1,6 @@
 import ProjectCard from '../project-card/project-card';
 import SunCo from '../../assets/images/SunCo.png';
-import '../../styles/components/projects.scss';
+import './projects.scss';
 
 export default function Projects() {
   return (
