@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import htmlIcon from '../../assets/html5.svg';
 import cssIcon from '../../assets/css3.svg';
-import javascriptIcon from '../../assets/javascript.svg';
+import typescriptIcon from '../../assets/typescript.svg';
 import reactIcon from '../../assets/react-40.svg';
 import scssIcon from '../../assets/scss.svg';
 import styledComponentsIcon from '../../assets/styled-components.png';
@@ -22,8 +22,8 @@ function Banner() {
       title: 'CSS3',
     },
     {
-      item: javascriptIcon,
-      title: 'JavaScript',
+      item: typescriptIcon,
+      title: 'TypeScript',
     },
     {
       item: reactIcon,

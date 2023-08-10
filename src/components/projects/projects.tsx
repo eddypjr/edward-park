@@ -22,7 +22,7 @@ export default function Projects() {
               title='Crown Clothing V2'
               image={SunCo}
               description='Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-              technologies={['React', 'TypeScript', 'Styled Components']}
+              technologies={['TypeScript', 'Node.js', 'Scss']}
               code='https://github.com/eddypjr/dot-technical-assessment'
               demo='https://fabulous-travesseiro-5c7afa.netlify.app/'
             />
@@ -30,7 +30,7 @@ export default function Projects() {
               title='Sun Co.'
               image={SunCo}
               description='Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-              technologies={['React', 'TypeScript', 'Styled Components']}
+              technologies={['React', 'Tailwind', 'Jest']}
               code='https://github.com/eddypjr/dot-technical-assessment'
               demo='https://fabulous-travesseiro-5c7afa.netlify.app/'
             />

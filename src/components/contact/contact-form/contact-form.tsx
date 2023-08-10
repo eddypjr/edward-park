@@ -1,26 +1,38 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/no-explicit-any */
-// import colorPalette from '../../../styles/global/colors.scss';
 import { useState, useRef, FormEvent } from 'react';
-// import '../../../styles/components/contact-form.scss';
 import './contact-form.scss';
 
 interface ContactFormProps {
-  setHasSubmitted: (arg0: boolean) => void;
+  setHasBeenSubmitted: (arg0: boolean) => void;
 }
 
-export default function ContactForm({ setHasSubmitted }: ContactFormProps) {
+export default function ContactForm({ setHasBeenSubmitted }: ContactFormProps) {
   const emailRef = useRef<HTMLInputElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const [errors, setErrors] = useState();
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const encode = (data: any) => {
+    return Object.keys(data)
+      .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+      .join('&');
+  };
+
   const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    if (emailRef.current && textareaRef.current && e.target) {
-      console.log(emailRef.current.value);
-      console.log(textareaRef.current.value);
-      setHasSubmitted(true);
-    }
+    const controller = new AbortController();
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'Contact Form', ...e }),
+      signal: controller.signal,
+    })
+      .then(() => setHasBeenSubmitted(true))
+      .catch((err) => {
+        setErrors(err.message);
+      });
+
+    return () => {
+      controller.abort();
+    };
   };
 
   return (
@@ -49,10 +61,10 @@ export default function ContactForm({ setHasSubmitted }: ContactFormProps) {
         <div style={{ display: 'none' }}>
           <label htmlFor='bot'>
             Leave blank.
-            <input type='text' name='bot-field' value='' />
+            <input type='text' name='bot-field' defaultValue='' />
           </label>
         </div>
-        <button className='button-btn' type='submit'>
+        <button className='button-btn' type='submit' aria-label='Submit form'>
           Send &gt;
         </button>
       </form>

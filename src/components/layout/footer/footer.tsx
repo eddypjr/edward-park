@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import resumeIcon from '../../../assets/resume.png';
-import '../../../styles/components/footer.scss';
+import './footer.scss';
 
 export default function Footer() {
   return (
@@ -13,17 +13,17 @@ export default function Footer() {
             <a
               target='_blank'
               rel='noreferrer'
-              aria-label='linkedIn'
+              aria-label='LinkedIn'
               href='https://www.linkedin.com/in/edwardparkwork/'
             >
               <FontAwesomeIcon icon={faLinkedin} size='2xl' />
             </a>
 
-            <a target='_blank' rel='noreferrer' aria-label='github' href='https://github.com/eddypjr'>
+            <a target='_blank' rel='noreferrer' aria-label='Github' href='https://github.com/eddypjr'>
               <FontAwesomeIcon icon={faGithub} size='2xl' />
             </a>
 
-            <a target='_blank' rel='noreferrer' aria-label='resume' href='https://eddypjr.github.io/resume/'>
+            <a target='_blank' rel='noreferrer' aria-label='Resume' href='https://eddypjr.github.io/resume/'>
               <img src={resumeIcon} alt='resume-icon' />
             </a>
           </div>
