@@ -1,34 +1,46 @@
-@import '../../../styles/global/colors.scss';
+@import '../../../styles/colors.scss';
 
-.footer {
+footer {
   background-color: #2d2e32;
-  padding: 5rem 0;
+  padding: 3rem 0;
   width: 100%;
 
-  .container {
+  .footer-container {
     margin: 0 auto;
     max-width: 107rem;
     padding: 0 4rem;
 
-    .footer-left {
+    .footer-content {
       align-items: center;
       display: flex;
       justify-content: space-between;
+      background-color: #2d2e32;
+      width: 100%;
 
       h3 {
-        color: #fff;
         font-size: 1.7rem;
+        color: white;
       }
 
-      .footer-right {
+      &__socials {
         display: flex;
         gap: 2rem;
 
         a {
           color: white;
 
+          i {
+            font-size: 2.3rem;
+            color: white;
+
+            &:hover {
+              transform: scale(1.2);
+              transition: all 0.2s ease-in-out;
+            }
+          }
+
           img {
-            -webkit-filter: invert(100%); /* Safari/Chrome */
+            -webkit-filter: invert(100%);
             filter: invert(100%);
             width: 2em;
             height: 2em;

@@ -5,11 +5,11 @@ import './footer.scss';
 
 export default function Footer() {
   return (
-    <footer className='footer'>
-      <div className='container'>
-        <div className='footer-left'>
-          <h3>Edward Park 2023.</h3>
-          <div className='footer-right'>
+    <footer>
+      <div className='footer-container'>
+        <div className='footer-content'>
+          <h1>Edward Park 2023.</h1>
+          <div className='footer-content__socials'>
             <a
               target='_blank'
               rel='noreferrer'
