@@ -9,7 +9,7 @@ import styledComponentsIcon from '../../assets/styled-components.png';
 import nodeJsIcon from '../../assets/nodejs.svg';
 import resumeIcon from '../../assets/resume.png';
 
-import './banner.scss';
+import './hero.scss';
 
 function Banner() {
   const skillIcons = [
@@ -44,11 +44,11 @@ function Banner() {
   ];
 
   return (
-    <section className='banner' id='home'>
-      <div className='container'>
-        <div className='content'>
-          <div className='banner-top'>
-            <div className='banner-text'>
+    <section className='hero' id='home'>
+      <div className='hero-container'>
+        <div className='hero-content'>
+          <div className='hero-top'>
+            <div className='hero-text'>
               <h1>Front-End React Developer</h1>
               <p>Hi, I&apos;m Edward Park. A passionate Front-end React Developer based in Los Angeles, California.</p>
               <span>
@@ -56,26 +56,39 @@ function Banner() {
                   target='_blank'
                   rel='noreferrer'
                   aria-label='linkedIn'
+                  title='LinkedIn'
                   href='https://www.linkedin.com/in/edwardparkwork/'
                 >
                   <FontAwesomeIcon icon={faLinkedin} size='sm' />
                 </a>
 
-                <a target='_blank' rel='noreferrer' aria-label='github' href='https://github.com/eddypjr'>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  aria-label='github'
+                  title='Github'
+                  href='https://github.com/eddypjr'
+                >
                   <FontAwesomeIcon icon={faGithub} size='sm' />
                 </a>
 
-                <a target='_blank' rel='noreferrer' aria-label='resume' href='https://eddypjr.github.io/resume/'>
+                <a
+                  target='_blank'
+                  rel='noreferrer'
+                  aria-label='resume'
+                  title='Resume'
+                  href='https://eddypjr.github.io/resume/'
+                >
                   <img src={resumeIcon} alt='resume-icon' />
                 </a>
               </span>
             </div>
-            <div className='banner-right' aria-label='Personal photo' />
+            <div className='hero-image' aria-label='Personal photo' />
           </div>
 
-          <div className='banner-bottom'>
+          <div className='hero-bottom'>
             <p>Tech Stack</p>
-            <div className='tech-stack'>
+            <div>
               <ul>
                 {skillIcons.map((skill) => (
                   <li key={skill.title}>
