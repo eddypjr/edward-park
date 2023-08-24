@@ -47,14 +47,18 @@ export default function ContactForm({ setHasBeenSubmitted }: ContactFormProps) {
         <div>
           <label htmlFor='email'>
             Email
-            <input type='email' id='email' ref={emailRef} placeholder='Email' required />
+            <div style={{ position: 'relative' }}>
+              <input type='email' id='email' ref={emailRef} placeholder='Email' required />
+            </div>
           </label>
           {errors && <span className='error'>{errors}</span>}
         </div>
         <div>
           <label htmlFor='contact-me-textarea'>
             TextArea
-            <textarea id='contact-me-textarea' ref={textareaRef} placeholder="Hey, how's it going?" required />
+            <div>
+              <textarea id='contact-me-textarea' ref={textareaRef} placeholder="Hey, how's it going?" required />
+            </div>
           </label>
           {errors && <span className='error'>{errors}</span>}
         </div>
