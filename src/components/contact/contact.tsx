@@ -8,12 +8,12 @@ export default function Contact() {
 
   return (
     <section className='contact' id='contact'>
-      <div className='container'>
-        <div className='content'>
+      <div className='contact-container'>
+        <div className='contact-content'>
           <div>
             {!hasBeenSubmitted ? (
               <>
-                <h3>Contact</h3>
+                <h2>Contact</h2>
                 <h4>Let&apos;s connect.</h4>
                 <p>
                   If you want to know about me or my work, or if you would just like to say hello, send me a message.
