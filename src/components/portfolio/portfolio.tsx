@@ -1,14 +1,14 @@
 import ProjectCard from '../project-card/project-card';
 import SunCo from '../../assets/images/SunCo.png';
-import './projects.scss';
+import './portfolio.scss';
 
-export default function Projects() {
+export default function Portfolio() {
   return (
-    <section className='projects' id='projects'>
-      <div className='projects-container'>
-        <h2>Portfolio</h2>
-        <div className='projects-content'>
-          <div className='projects-grid'>
+    <section className='portfolio' id='portfolio'>
+      <div className='portfolio-container'>
+        <div className='portfolio-content'>
+          <h2>Portfolio</h2>
+          <div className='portfolio-grid'>
             <ProjectCard
               title='Sun Co.'
               image='https://i.ibb.co/sbPxFhn/home-Large.webp'

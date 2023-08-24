@@ -1,6 +1,6 @@
 @import '../../styles/colors.scss';
 
-.projects {
+.portfolio {
   padding: 15rem 0;
   background-color: $grey-bg-color;
 
@@ -8,22 +8,24 @@
     padding: 8rem 0;
   }
 
-  .projects-container {
-    width: 60%;
+  .portfolio-container {
     margin: 0 auto;
+    max-width: 107rem;
+    width: 60%;
 
-    .projects-content {
+    @media (max-width: 640px) {
+      width: 90%;
+    }
+
+    .portfolio-content {
       display: flex;
       flex-direction: column;
-
-
 
       @media (max-width: 640px) {
         text-align: center;
       }
 
-
-      .projects-grid {
+      .portfolio-grid {
         grid-gap: 5rem;
         display: grid;
         gap: 5rem;
