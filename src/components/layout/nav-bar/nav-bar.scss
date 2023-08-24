@@ -1,35 +1,112 @@
-@import '../../../styles/global/colors.scss';
+@import '../../../styles/colors.scss';
 
-.navbar {
-  align-items: center;
-  background-color: $background-color;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+.mobile-menu {
+  font-size: 2.3rem;
+  cursor: pointer;
+  display: none;
+
+  &:hover {
+    color: $text-color;
+    transition: all 0.3s;
+  }
+
+  @media (max-width: 900px) {
+    display: flex;
+  }
+}
+
+.closed {
+  left: -100% !important;
+}
+
+.open {
+  left: 0 !important;
+}
+
+.mobile-nav {
   display: flex;
-  font-size: 1.7rem;
-  height: auto;
-  justify-content: space-between;
-  left: 0;
-  padding: 25px 40px 25px 50px;
+  width: 100%;
+  height: 100vh;
+  z-index: 300;
+  background-color: white;
   position: fixed;
   top: 0;
-  width: 100%;
-  z-index: 200;
+  left: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
 
-  .logo {
-    font-size: 1.5rem;
+  span {
+    font-size: 3.3rem;
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
     cursor: pointer;
+
+    &:hover {
+      color: $text-color;
+      transition: all 0.3s;
+    }
   }
 
   ul {
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 4rem;
+    font-size: 2.3rem;
     list-style: none;
 
     a {
-      color: #000;
-      font-weight: 600;
+      color: $title-color;
       text-decoration: none;
-      transition: all 0.23s;
+      font-weight: 500;
+
+      &:hover {
+        color: $text-color;
+        transition: all 0.3s;
+      }
     }
   }
+}
+
+.navbar {
+  font-size: 1.7rem;
+  width: 100%;
+  height: auto;
+  padding: 1.563rem 2.5rem 1.563rem 3.125rem;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: $background-color;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 0.625rem rgb(0 0 0 / 9%);
+  z-index: 200;
+  align-items: center;
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+
+    a {
+      color: black;
+      text-decoration: none;
+      transition: all 0.23s;
+      font-weight: 600;
+
+      @media (max-width: 900px) {
+        display: none;
+      }
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+  }
+}
+
+.logo {
+  cursor: pointer;
+  color: black;
 }
