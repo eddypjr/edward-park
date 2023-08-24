@@ -4,13 +4,13 @@ import './about-me.scss';
 function AboutMe() {
   return (
     <section className='about' id='about'>
-      <div className='container'>
-        <div className='content'>
+      <div className='about-me-container'>
+        <div className='about-me-content'>
           <div className='about-me-image'>
             <img src={laptopImage} alt='laptop' />
           </div>
           <div className='about-me-text'>
-            <h3>About Me</h3>
+            <h2>About Me</h2>
             <h4>A Passionate Front-End Developer</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et

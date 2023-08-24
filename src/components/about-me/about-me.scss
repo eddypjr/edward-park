@@ -1,19 +1,28 @@
-@import '../../styles/global/colors.scss';
+@import '../../styles/colors.scss';
 
 .about {
   padding: 15rem 0;
   background-color: $background-color;
 
-  .container {
+  @media (max-width: 1024px) {
+    padding: 8rem 0;
+  }
+
+  .about-me-container {
     margin: 0 auto;
     max-width: 107rem;
     padding: 0 4rem;
 
-    .content {
+    .about-me-content {
       align-items: center;
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-content: center;
+
+      @media (max-width: 1024px) {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
 
       .about-me-image {
         position: relative;
@@ -22,11 +31,20 @@
           border-radius: 1.7rem;
           height: 35rem;
           width: 41rem;
+
+          @media (max-width: 1024px) {
+            margin-bottom: 3.5rem;
+          }
         }
       }
 
       .about-me-text {
         padding-right: 1.5rem;
+
+        @media (max-width: 1024px) {
+          max-width: 54rem;
+          margin: 0 auto;
+        }
 
         h4 {
           color: $title-color;
@@ -34,14 +52,6 @@
           font-size: 2.5rem;
           line-height: 1.4;
           margin-bottom: 2rem;
-        }
-
-        h3 {
-          color: $header-color;
-          font-size: 1.7rem;
-          font-weight: 700;
-          margin-bottom: 1rem;
-          text-transform: uppercase;
         }
 
         p {
