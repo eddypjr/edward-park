@@ -1,0 +1,15 @@
+@import '../../styles/colors.scss';
+
+.experience {
+  padding: 15rem 0;
+
+  .exp-container {
+    margin: 0 auto;
+    width: 60%;
+
+    .exp-item-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
