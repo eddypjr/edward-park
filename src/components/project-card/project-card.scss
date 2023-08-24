@@ -1,46 +1,70 @@
-@import '../../styles/global/colors.scss';
+@import '../../styles/colors.scss';
 
-.project-card {
+.pro-card {
   display: flex;
-  flex-direction: row;
-  gap: 8rem;
-  height: 40rem;
-  padding: 2rem;
-  background-color: $background-color;
-  border-radius: 1.7rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  box-shadow: 0 0 0.625rem rgb(0 0 0 / 10%);
+  border-radius: 0.313rem;
 
-  .project-image {
-    background-color: hsla(0, 0%, 46%, 0.2);
-    border-radius: 1.7rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: auto;
-    overflow: hidden;
-    width: 53rem;
+  &__1 {
+    height: 40rem;
+    flex-direction: row;
+    padding: 2rem;
+    gap: 1rem;
 
-    a {
-      img {
-        height: auto;
-        width: 100%;
-      }
+    @media (max-width: 1024px) {
+      height: 75rem;
+      flex-direction: column !important;
+      gap: 3rem;
+      width: fit-content;
+      margin: 0 auto;
     }
   }
 
-  .project-text {
-    display: flex;
-    flex-direction: column;
+  &__image {
+    width: 53rem;
     height: auto;
-    justify-content: center;
+    border-radius: 1.7rem;
+    background-color: #76767633;
+    overflow: hidden;
+    box-shadow: 0 0 0.625rem rgb(0 0 0 / 10%);
+
+    @media (max-width: 640px) {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__text {
+    display: flex;
+    height: auto;
+    flex-direction: column;
     text-align: center;
-    width: 30rem;
+    justify-content: center;
+    width: 50%;
+
+    @media (max-width: 1024px) {
+      margin: 0 auto;
+      width: 40rem;
+    }
+
+    @media (max-width: 640px) {
+      width: 100%;
+      width: 30rem;
+    }
 
     h3 {
-      color: $title-color;
+      color: $header-color;
       font-size: 1.7rem;
-      margin-bottom: 2rem;
-      position: relative;
+      font-weight: 700;
+      margin-bottom: 1rem;
       text-transform: uppercase;
     }
+
     p {
       color: $text-color;
       font-size: 1.7rem;
@@ -54,34 +78,43 @@
       gap: 1rem;
       justify-content: center;
       margin-top: 1rem;
-      
-      div {
-        width: 100%;
-        height: 100%;
+      width: 100%;
+      flex-wrap: wrap;
 
-        img {
-          margin-top: 5px;
-          width: 100px;
-          height: 30px;
-          border-radius: 5px;
-        }
+      img {
+        margin-top: 0.313rem;
+        border-radius: 0.313rem;
       }
     }
-    .links {
+  }
+
+  .links {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    margin-top: 10%;
+
+    a {
+      color: $title-color;
+      font-size: 1.7rem;
+      font-weight: 500;
+      gap: 0.313rem;
+      text-decoration: none;
       align-items: center;
       display: flex;
-      gap: 1rem;
-      justify-content: space-evenly;
-      margin-top: 3rem;
 
-      a {
-        color: $title-color;
-        font-size: 1.7rem;
-        font-weight: 500;
-        gap: 5px;
-        text-decoration: none;
-        align-items: center;
-        display: flex;
+      i {
+        font-size: 2.8rem;
+      }
+
+      img {
+        width: 3.5rem;
+      }
+
+      &:hover {
+        color: $header-color;
+        transition: all 0.3s;
       }
     }
   }

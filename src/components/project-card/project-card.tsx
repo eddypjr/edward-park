@@ -21,6 +21,7 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ title, image, description, technologies, code, demo }: ProjectCardProps) {
   const [skills, setSkills] = useState<Skill[]>([]);
+  const [scroll, setScroll] = useState<boolean>(false);
   const skillIconsRef = useRef([
     {
       item: '(https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white',
@@ -58,6 +59,10 @@ export default function ProjectCard({ title, image, description, technologies, c
       item: 'https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white',
       title: 'Jest',
     },
+    {
+      item: 'https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white',
+      title: 'Firebase',
+    },
   ]);
 
   useEffect(() => {
@@ -71,20 +76,27 @@ export default function ProjectCard({ title, image, description, technologies, c
   }, [technologies]);
 
   return (
-    <div className='project-card'>
-      <div className='project-image'>
+    <div className='pro-card pro-card__1'>
+      <div className='pro-card__image'>
         <a target='_blank' href={demo} rel='noreferrer'>
-          <img src={image} alt='website' />
+          <img
+            src={image}
+            style={{
+              transform: scroll ? `translateY(-20%)` : 'translateY(0%)',
+              transition: 'transform 5s ease-in-out',
+            }}
+            onMouseEnter={() => setScroll(true)}
+            onMouseLeave={() => setScroll(false)}
+            alt='website'
+          />
         </a>
       </div>
-      <div className='project-text'>
+      <div className='pro-card__text'>
         <h3>{title}</h3>
         <p>{description}</p>
         <div className='stack'>
           {skills.map((skill) => (
-            <div key={crypto.randomUUID()}>
-              <img src={skill.item} alt='react icon' />
-            </div>
+            <img src={skill.item} key={crypto.randomUUID()} alt={`${skill.item} icon`} />
           ))}
         </div>
         <div className='links'>
