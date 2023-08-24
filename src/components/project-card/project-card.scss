@@ -5,6 +5,7 @@
   background-color: white;
   box-shadow: 0 0 0.625rem rgb(0 0 0 / 10%);
   border-radius: 0.313rem;
+  width: 100%;
 
   &__1 {
     height: 40rem;
@@ -50,6 +51,7 @@
     @media (max-width: 1024px) {
       margin: 0 auto;
       width: 40rem;
+      padding: 0;
     }
 
     @media (max-width: 640px) {
