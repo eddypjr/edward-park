@@ -17,9 +17,18 @@ type ProjectCardProps = {
   technologies: string[];
   code: string;
   demo: string;
+  reversed: boolean;
 };
 
-export default function ProjectCard({ title, image, description, technologies, code, demo }: ProjectCardProps) {
+export default function ProjectCard({
+  title,
+  image,
+  description,
+  technologies,
+  code,
+  demo,
+  reversed,
+}: ProjectCardProps) {
   const [skills, setSkills] = useState<Skill[]>([]);
   const [scroll, setScroll] = useState<boolean>(false);
   const skillIconsRef = useRef([
@@ -76,14 +85,14 @@ export default function ProjectCard({ title, image, description, technologies, c
   }, [technologies]);
 
   return (
-    <div className='pro-card pro-card__1'>
+    <div className={`pro-card pro-card__1 ${reversed && 'reverse'}`}>
       <div className='pro-card__image'>
         <a target='_blank' href={demo} rel='noreferrer'>
           <img
             src={image}
             style={{
-              transform: scroll ? `translateY(-20%)` : 'translateY(0%)',
-              transition: 'transform 5s ease-in-out',
+              transform: scroll ? `translateY(-10%)` : 'translateY(0%)',
+              transition: 'transform 3s ease-in-out',
             }}
             onMouseEnter={() => setScroll(true)}
             onMouseLeave={() => setScroll(false)}
