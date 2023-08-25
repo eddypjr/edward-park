@@ -16,6 +16,7 @@ export default function Portfolio() {
               technologies={['React', 'TypeScript', 'Styled Components', 'Firebase']}
               code='https://github.com/eddypjr/dot-technical-assessment'
               demo='https://storied-centaur-cce0fd.netlify.app/'
+              reversed={false}
             />
             <ProjectCard
               title='Crown Clothing V2'
@@ -24,6 +25,7 @@ export default function Portfolio() {
               technologies={['TypeScript', 'Node.js', 'Scss']}
               code='https://github.com/eddypjr/dot-technical-assessment'
               demo='https://fabulous-travesseiro-5c7afa.netlify.app/'
+              reversed
             />
             <ProjectCard
               title='Sun Co.'
@@ -32,6 +34,7 @@ export default function Portfolio() {
               technologies={['React', 'Tailwind', 'Jest']}
               code='https://github.com/eddypjr/dot-technical-assessment'
               demo='https://fabulous-travesseiro-5c7afa.netlify.app/'
+              reversed={false}
             />
           </div>
         </div>
