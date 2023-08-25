@@ -3,6 +3,11 @@
 .contact {
   padding: 15rem 0;
 
+  background-image: url('../../assets/reverse-spacer.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   @media (max-width: 1024px) {
     padding: 8rem 0;
   }
@@ -11,12 +16,11 @@
     margin: 0 auto;
     width: 60%;
     max-width: 107rem;
-    // padding: 0 4rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 
-    @media (max-width: 640px) {
+    @media (max-width: 1024px) {
       width: 90%;
     }
 
@@ -29,7 +33,7 @@
         flex-direction: column;
       }
 
-      @media (max-width: 640px) {
+      @media (max-width: 1024px) {
         width: 100%;
       }
 
@@ -42,26 +46,10 @@
         p {
           color: $text-color;
           font-family: sans-serif;
-          font-size: 1.7rem;
+          font-size: 18px;
           font-weight: 500;
           line-height: 1.5;
         }
-      }
-
-      h4 {
-        color: $title-color;
-        font-family: sans-serif;
-        font-size: 2.5rem;
-        line-height: 1.4;
-        margin-bottom: 2rem;
-      }
-
-      p {
-        color: $text-color;
-        font-family: sans-serif;
-        font-size: 1.7rem;
-        font-weight: 500;
-        line-height: 1.5;
       }
     }
 
@@ -72,7 +60,7 @@
       height: 35rem;
       width: 50rem;
 
-      @media (max-width: 640px) {
+      @media (max-width: 1024px) {
         width: 100%;
         transition: all 0.25s ease-in-out;
         // transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);

@@ -3,6 +3,11 @@
 .experience {
   padding: 15rem 0;
 
+  background-image: url('../../assets/spacer.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   @media (max-width: 1024px) {
     padding: 8rem 0;
   }
@@ -12,7 +17,7 @@
     max-width: 107rem;
     width: 60%;
 
-    @media (max-width: 640px) {
+    @media (max-width: 1024px) {
       width: 90%;
     }
 
