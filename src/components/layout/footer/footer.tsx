@@ -8,7 +8,7 @@ export default function Footer() {
     <footer>
       <div className='footer-container'>
         <div className='footer-content'>
-          <h1>Edward Park 2023.</h1>
+          <h3>Copyright © 2023. All rights reserved.</h3>
           <div className='footer-content__socials'>
             <a
               target='_blank'

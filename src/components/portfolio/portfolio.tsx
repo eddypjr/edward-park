@@ -12,7 +12,7 @@ export default function Portfolio() {
             <ProjectCard
               title='Sun Co.'
               image='https://i.ibb.co/sbPxFhn/home-Large.webp'
-              description='Discover Sun Co., a serverless ecommerce web application that combines an intuitive design with a seamless user experience, utilizing the Stripe API enssuring a clutter-free shopping experience.'
+              description='Discover Sun Co., a serverless ecommerce web application that combines an intuitive design with a seamless user experience, utilizing the Stripe API ensuring a clutter-free shopping experience.'
               technologies={['React', 'TypeScript', 'Styled Components', 'Firebase']}
               code='https://github.com/eddypjr/dot-technical-assessment'
               demo='https://storied-centaur-cce0fd.netlify.app/'

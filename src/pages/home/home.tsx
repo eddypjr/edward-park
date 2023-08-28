@@ -1,7 +1,7 @@
 import NavBar from '../../components/layout/nav-bar/nav-bar';
-import Banner from '../../components/banner/banner';
-import AboutMe from '../../components/about-me/about-me';
-import Projects from '../../components/projects/projects';
+import Hero from '../../components/hero/hero';
+import Projects from '../../components/portfolio/portfolio';
+import Experience from '../../components/experience/experience';
 import Contact from '../../components/contact/contact';
 import Footer from '../../components/layout/footer/footer';
 
@@ -9,8 +9,8 @@ function Home() {
   return (
     <>
       <NavBar />
-      <Banner />
-      <AboutMe />
+      <Hero />
+      <Experience />
       <Projects />
       <Contact />
       <Footer />
