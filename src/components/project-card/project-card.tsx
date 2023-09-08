@@ -18,6 +18,7 @@ type ProjectCardProps = {
   code: string;
   demo: string;
   reversed: boolean;
+  scrollSpeed: string;
 };
 
 export default function ProjectCard({
@@ -28,6 +29,7 @@ export default function ProjectCard({
   code,
   demo,
   reversed,
+  scrollSpeed,
 }: ProjectCardProps) {
   const [skills, setSkills] = useState<Skill[]>([]);
   const [scroll, setScroll] = useState<boolean>(false);
@@ -72,6 +74,26 @@ export default function ProjectCard({
       item: 'https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white',
       title: 'Firebase',
     },
+    {
+      item: 'https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white',
+      title: 'NextJS',
+    },
+    {
+      item: 'https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white',
+      title: 'MongoDB',
+    },
+    {
+      item: 'https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white',
+      title: 'Vite',
+    },
+    {
+      item: 'https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7',
+      title: 'Netlify',
+    },
+    {
+      item: 'https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white',
+      title: 'Vercel',
+    },
   ]);
 
   useEffect(() => {
@@ -91,8 +113,8 @@ export default function ProjectCard({
           <img
             src={image}
             style={{
-              transform: scroll ? `translateY(-10%)` : 'translateY(0%)',
-              transition: 'transform 3s ease-in-out',
+              transform: scroll ? `translateY(${scrollSpeed})` : 'translateY(0%)',
+              transition: 'transform 5s ease-in-out',
             }}
             onMouseEnter={() => setScroll(true)}
             onMouseLeave={() => setScroll(false)}
@@ -103,6 +125,13 @@ export default function ProjectCard({
       <div className='pro-card__text'>
         <h3>{title}</h3>
         <p>{description}</p>
+        {title === 'Sun Co.' && (
+          <p>
+            <br />
+            When checking out, please use Stripe&apos;s demo credit car number of <b>4242 4242 4242 4242</b>. The CVC
+            can be any three-digit number and the expiration date can be any future date.
+          </p>
+        )}
         <div className='stack'>
           {skills.map((skill) => (
             <img src={skill.item} key={crypto.randomUUID()} alt={`${skill.item} icon`} />

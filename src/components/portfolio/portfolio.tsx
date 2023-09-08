@@ -1,5 +1,4 @@
 import ProjectCard from '../project-card/project-card';
-import SunCo from '../../assets/images/SunCo.png';
 import './portfolio.scss';
 
 export default function Portfolio() {
@@ -12,29 +11,23 @@ export default function Portfolio() {
             <ProjectCard
               title='Sun Co.'
               image='https://i.ibb.co/sbPxFhn/home-Large.webp'
-              description='Discover Sun Co., a serverless ecommerce web application that combines an intuitive design with a seamless user experience, utilizing the Stripe API ensuring a clutter-free shopping experience.'
-              technologies={['React', 'TypeScript', 'Styled Components', 'Firebase']}
+              description='Discover Sun Co., a serverless ecommerce web application that combines an intuitive design with a seamless user experience, utilizing the Stripe API ensuring a clutter-free shopping experience.
+              '
+              technologies={['React', 'TypeScript', 'Styled Components', 'Firebase', 'Vite', 'Netlify']}
               code='https://github.com/eddypjr/dot-technical-assessment'
               demo='https://storied-centaur-cce0fd.netlify.app/'
               reversed={false}
+              scrollSpeed='-10%'
             />
             <ProjectCard
-              title='Crown Clothing V2'
-              image={SunCo}
-              description='Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-              technologies={['TypeScript', 'Node.js', 'Scss']}
-              code='https://github.com/eddypjr/dot-technical-assessment'
-              demo='https://fabulous-travesseiro-5c7afa.netlify.app/'
+              title='Colosseum Combat'
+              image='https://i.ibb.co/cNH1YCc/home.webp'
+              description='Explore Colosseum Combat, a full stack martial arts gym that utilizes the new Server Components of Next 13. Leverages Server Side Rendering for lightning-fast load times with excellent SEO optimization for high discoverability.'
+              technologies={['NextJS', 'MongoDB', 'TypeScript', 'Tailwind', 'Vercel']}
+              code='https://github.com/eddypjr/colosseum-combat'
+              demo='https://colosseum-combat.vercel.app/'
               reversed
-            />
-            <ProjectCard
-              title='Sun Co.'
-              image={SunCo}
-              description='Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-              technologies={['React', 'Tailwind', 'Jest']}
-              code='https://github.com/eddypjr/dot-technical-assessment'
-              demo='https://fabulous-travesseiro-5c7afa.netlify.app/'
-              reversed={false}
+              scrollSpeed='-75%'
             />
           </div>
         </div>
