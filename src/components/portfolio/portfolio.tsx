@@ -14,7 +14,7 @@ export default function Portfolio() {
               description='Discover Sun Co., a serverless ecommerce web application that combines an intuitive design with a seamless user experience, utilizing the Stripe API ensuring a clutter-free shopping experience.
               '
               technologies={['React', 'TypeScript', 'Styled Components', 'Firebase', 'Vite', 'Netlify']}
-              code='https://github.com/eddypjr/dot-technical-assessment'
+              code='https://github.com/eddypjr/Sun-Co'
               demo='https://storied-centaur-cce0fd.netlify.app/'
               reversed={false}
               scrollSpeed='-10%'
