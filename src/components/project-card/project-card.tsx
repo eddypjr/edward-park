@@ -125,13 +125,6 @@ export default function ProjectCard({
       <div className='pro-card__text'>
         <h3>{title}</h3>
         <p>{description}</p>
-        {title === 'Sun Co.' && (
-          <p>
-            <br />
-            When checking out, please use Stripe&apos;s demo credit car number of <b>4242 4242 4242 4242</b>. The CVC
-            can be any three-digit number and the expiration date can be any future date.
-          </p>
-        )}
         <div className='stack'>
           {skills.map((skill) => (
             <img src={skill.item} key={crypto.randomUUID()} alt={`${skill.item} icon`} />

@@ -61,9 +61,7 @@
       width: 50rem;
 
       @media (max-width: 1024px) {
-        width: 100%;
         transition: all 0.25s ease-in-out;
-        // transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
         transform: scale(0.8);
       }
     }
