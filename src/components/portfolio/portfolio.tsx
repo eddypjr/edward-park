@@ -9,7 +9,7 @@ export default function Portfolio() {
           <h2>Portfolio</h2>
           <div className='portfolio-grid'>
             <ProjectCard
-              title='Sun Co.'
+              title='Sun Co. 🛍️'
               image='https://i.ibb.co/sbPxFhn/home-Large.webp'
               description='Discover Sun Co., a serverless ecommerce web application that combines an intuitive design with a seamless user experience, utilizing the Stripe API ensuring a clutter-free shopping experience.
               '
@@ -20,7 +20,7 @@ export default function Portfolio() {
               scrollSpeed='-10%'
             />
             <ProjectCard
-              title='Colosseum Combat'
+              title='Colosseum Combat 🥊'
               image='https://i.ibb.co/cNH1YCc/home.webp'
               description='Explore Colosseum Combat, a full stack martial arts gym that utilizes the new Server Components of Next 13. Leverages Server Side Rendering for lightning-fast load times with excellent SEO optimization for high discoverability.'
               technologies={['NextJS', 'MongoDB', 'TypeScript', 'Tailwind', 'Vercel']}
