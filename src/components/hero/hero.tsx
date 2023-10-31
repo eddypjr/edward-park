@@ -4,10 +4,10 @@ import htmlIcon from '../../assets/html5.svg';
 import cssIcon from '../../assets/css3.svg';
 import typescriptIcon from '../../assets/typescript.svg';
 import reactIcon from '../../assets/react-40.svg';
-import scssIcon from '../../assets/scss.svg';
 import styledComponentsIcon from '../../assets/styled-components.png';
 import nodeJsIcon from '../../assets/nodejs.svg';
 import resumeIcon from '../../assets/resume.png';
+import nextJsIcon from '../../assets/nextjs.svg';
 
 import './hero.scss';
 
@@ -30,8 +30,8 @@ function Hero() {
       title: 'React',
     },
     {
-      item: scssIcon,
-      title: 'Scss',
+      item: nextJsIcon,
+      title: 'Next.js',
     },
     {
       item: styledComponentsIcon,
@@ -50,7 +50,7 @@ function Hero() {
           <div className='hero-content'>
             <div className='hero-top'>
               <div className='hero-text'>
-                <h1>Front-End React Developer</h1>
+                <h1>Full Stack React Developer</h1>
                 <p>Hi, I&apos;m Edward Park. A versatile Front-End Developer from Los Angeles, California. 📍</p>
                 <span>
                   <a

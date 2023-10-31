@@ -4,6 +4,15 @@ import './experience.scss';
 function Experience() {
   const experienceItems = [
     {
+      dates: 'August 2023 - Current',
+      desc: 'Developed a bespoke server-side rendered storefront for an online clothing brand, leveraging the power of Shopify, Hydrogen, and Remix, with deployment via Oxygen.',
+      position: 'Full Stack Engineer',
+      company: '@MadMadWorld',
+
+      open: true,
+      techStack: ['Shopify', 'Hydrogen', 'React', 'Remix', 'Oxygen', 'Tailwind'],
+    },
+    {
       dates: 'July 2021 - April 2022',
       desc: 'At Bitovi, I executed frontend client work for a major fast food corporation. Worked on the development of an internal tool that validated new features, endpoints, and quality enhancement discoveries.',
       position: 'Junior React Developer',
