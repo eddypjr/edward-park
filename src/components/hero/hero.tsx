@@ -51,7 +51,7 @@ function Hero() {
             <div className='hero-top'>
               <div className='hero-text'>
                 <h1>Full Stack React Developer</h1>
-                <p>Hi, I&apos;m Edward Park. A versatile Front-End Developer from Los Angeles, California. 📍</p>
+                <p>Hi, I&apos;m Edward Park. A versatile Full Stack React Developer from Los Angeles, California. 📍</p>
                 <span>
                   <a
                     target='_blank'
