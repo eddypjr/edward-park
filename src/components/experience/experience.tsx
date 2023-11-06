@@ -6,7 +6,7 @@ function Experience() {
     {
       dates: 'August 2023 - Current',
       desc: 'Developed a bespoke server-side rendered storefront for an online clothing brand, leveraging the power of Shopify, Hydrogen, and Remix, with deployment via Oxygen.',
-      position: 'Full Stack Engineer',
+      position: 'Software Engineer',
       company: '@MadMadWorld',
 
       open: true,
