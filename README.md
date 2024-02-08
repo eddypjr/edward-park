@@ -1,2 +1,2 @@
-# Portfolio Website
+# Portfolio
 https://edward-park.vercel.app/
