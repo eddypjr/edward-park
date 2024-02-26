@@ -4,7 +4,7 @@ import './experience.scss';
 function Experience() {
   const experienceItems = [
     {
-      dates: 'August 2023 - Current',
+      dates: 'August 2023 - January 2024',
       desc: 'Developed a bespoke server-side rendered storefront for an online clothing brand, leveraging the power of Shopify, Hydrogen, and Remix, with deployment via Oxygen.',
       position: 'Software Engineer',
       company: '@MadMadWorld',
